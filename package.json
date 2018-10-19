@@ -6,7 +6,8 @@
   "scripts": {},
   "keywords": [
     "tools",
-    "github"
+    "github",
+    "branch-protection"
   ],
   "author": "Sean MacIntyre <smacintyre@crabel.com>",
   "license": "ISC",
