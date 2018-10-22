@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "github tools",
   "main": "cli.js",
-  "scripts": {},
+  "scripts": {
+    "test": "mocha tests"
+  },
   "keywords": [
     "tools",
     "github",
@@ -14,6 +16,8 @@
   "dependencies": {
     "axios": "^0.18.0",
     "ssl-root-cas": "^1.2.5",
-    "minimist": "^0.0.8"
+    "minimist": "^0.0.8",
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
   }
 }
