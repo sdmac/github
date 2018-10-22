@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 const axios = require('axios');
-const shared = require('@crabel/shared');
+const str_util = require('../str_util');
 
 const config = require('./config.json');
  
@@ -94,8 +94,8 @@ function updateBranchProtection(protectionUrl, updates) {
 
 function protectBranch(repo, branch) {
   let protectionUrl
-    = shared.str_util.format(baseUrls.protection,
-                             args.host, repo, branch);
+    = str_util.format(baseUrls.protection,
+                      args.host, repo, branch);
   axios.get(protectionUrl, {
       headers: args.headers
     })
@@ -131,8 +131,8 @@ function protectBranch(repo, branch) {
  
 function protectBranches(repo) {
   let branchesUrl
-    = shared.str_util.format(baseUrls.listBranches,
-                             args.host, repo);
+    = str_util.format(baseUrls.listBranches,
+                      args.host, repo);
   axios.get(branchesUrl, {
       headers: args.headers
     })

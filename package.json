@@ -1,5 +1,5 @@
 {
-  "name": "@crabel/github",
+  "name": "github",
   "version": "1.0.0",
   "description": "github tools",
   "main": "cli.js",
@@ -12,7 +12,6 @@
   "author": "Sean MacIntyre <smacintyre@crabel.com>",
   "license": "ISC",
   "dependencies": {
-    "@crabel/shared": "^1.0.85",
     "axios": "^0.18.0",
     "ssl-root-cas": "^1.2.5",
     "minimist": "^0.0.8"
